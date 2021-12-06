@@ -18,19 +18,25 @@ my_shopping_list = [
     'cherries'
 ]
 print(my_shopping_list)
+for item in my_shopping_list:
+    if item == 'pears':
+        continue
+    print(item)
 
 x = (
         200 + 300 + 400 + 500 + 600 + 700 + 800 + 900 +
         1000 + 1100 + 1200 + 1300 + 1400
 )
 
-hour = 19
+hour = 13
 if hour < 18:
-    greeting = "Good day"
+    greeting = "good day"
     print('hour is less than 18')
 else:
-    greeting = "Good evening"
-print(greeting)
+    greeting = "good evening"
+
+message = f"Current time: {hour - 3}:00. {greeting.capitalize()}!"
+print(message)
 
 multiline_str = """
 Textual data in Python is handled with str objects, or strings.
@@ -40,3 +46,4 @@ double quotes or triple quotes:
 """
 
 print(multiline_str)
+
