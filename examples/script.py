@@ -31,3 +31,12 @@ if hour < 18:
 else:
     greeting = "Good evening"
 print(greeting)
+
+multiline_str = """
+Textual data in Python is handled with str objects, or strings.
+Strings can be created with string literals. 
+String literals are characters enclosed by single quotes, 
+double quotes or triple quotes:
+"""
+
+print(multiline_str)
